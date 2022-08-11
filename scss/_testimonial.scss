@@ -1,31 +1,22 @@
 .testiomonial {
-    padding: 1em;
-    background: cadetblue;
-
-    &-container {
-        padding: 1em;
-        background: red;
-    }
+    padding: 3em 0;
+    background: darkgray;
 
     &-box {
-        @include flex (center , center , auto);
+        @include flex (space-between, center , auto);
 
         max-width: 70%;
         min-height: 5em;
         margin: auto;
-        padding: 1em;
-        background: tomato;
     }
 
     &-imagen {
         min-width: 50%;
-        min-height: 10em;
+        min-height: 13em;
         background: yellow;
     }
 
     &-textos {
-        min-width: 50%;
-        min-height: 10em;
-        background: green;
+        max-width: 40%;
     }
 }

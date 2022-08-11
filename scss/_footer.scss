@@ -1,27 +1,24 @@
 .footer {
     padding: 1em;
-    background: tomato;
+    background:darkgrey;
 
     &-wrapper {
         @include wrapper (100% , 1200px , auto , 0)
     }
 
     &-container {
-        padding: 1em;
-        background: steelblue;
+        text-align: center;
     }
 
     &-iconbox {
-        max-width: 20%;
-        min-height: 5em;
-        margin: auto;
-        background: yellow;
+        max-width: 15%;
+        margin: 0 auto 1em;
     }
 
-    &-terms{
-        max-width: 50%;
-        min-height: 3em;
-        margin: 1em auto 0;
+    &-icon {
+        display: inline-block;
+        padding: 1em;
         background: peru;
+        margin: 0 .25em;
     }
 }

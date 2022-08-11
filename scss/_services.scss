@@ -1,21 +1,26 @@
 .services {
-    padding: 1em;
-    background: red;
+    padding: 3em 0;
+    // background: lightsalmon;
 
     &-container {
-        @include flex (center , center , auto);
-
-        padding: 1em;
-        background: blue;
+        @include flex (space-between , center , auto);
     }
 
-    &-imagen , &-textos {
-        min-width: 50%;
-        min-height: 10em;
-        background: red;
+    &-imagen {
+        min-width: 40%;
+        min-height: 20em;
+        background: orange;
     }
 
     &-textos {
-        background: yellow;
+        max-width: 40%;
+    }
+
+    &-boton {
+        margin-top: 1em;
+        padding: 0 1em;
+        line-height: 2;
+        background: black;
+        color: wheat;
     }
 }

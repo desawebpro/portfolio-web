@@ -1,23 +1,26 @@
 .hero {
-    padding: 1em;
-    background: darkkhaki;
+    padding: 3em 0;
+    background: lightyellow;
 
     &-container {
-        @include flex (center , auto , auto);
-
-        padding: 1em;
-        background: darkgoldenrod;
+        @include flex (space-between , center , auto);
     }
 
     &-textos {
-        min-width: 50%;
-        min-height: 20em;
-        background: red;
+        max-width: 40%;
     }
 
     &-imagen {
-        min-width: 50%;
+        min-width: 40%;
         min-height: 20em;
         background: blue;
+    }
+
+    &-boton {
+        margin-top: 1.5em;
+        padding: 0 1em;
+        line-height: 2em;
+        background: black;
+        color: wheat;
     }
 }

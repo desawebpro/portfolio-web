@@ -1,29 +1,26 @@
 .benefits {
-    padding:  1em;
-    background: blue;
-
-    &-container {
-        padding: 1em;
-        background: red;
-    }
+    padding:  3em 0;
+    background: lightgray;
 
     &-tittle {
-        padding: 1em;
-        background: pink;
+        text-align: center;
     }
 
     &-content-box {
         @include flex (center , center , auto);
-        gap: 1em;
+        flex-wrap: wrap;
 
-        margin-top: 1em;
-        padding: 1em;
-        background: yellow;
+        margin-top: 2em;
+
     }
 
     &-box {
-        min-width: calc(25% - 1em);
+        max-width: 50%;
         min-height: 15em;
-        background: tomato;
+        padding-right: 10%;
+    }
+
+    &-desc {
+        margin-top: 1em;
     }
 }

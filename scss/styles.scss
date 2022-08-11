@@ -4,11 +4,11 @@
 , 'mixins';
 
 body {
-    background: gray;
+    background: #f2f2f2;
 }
 
 .wrapper {
-    @include wrapper (1000% , 1200px , auto , 0);
+    @include wrapper (1000% , 1024px , auto , 0);
 }
 
 // header

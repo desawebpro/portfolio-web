@@ -1,21 +1,26 @@
 .myblog {
-    padding: 1em;
-    background: steelblue;
+    padding: 3em 0;
+    // background: lightblue;
 
     &-container {
-        @include flex (center , center , auto);
-        
-        padding: 1em;
-        background: red;
+        @include flex (space-between , center , auto);
     }
 
-    &-textos , &-imagen {
-        min-width: 50%;
-        min-height: 10em;
-        background: pink;
+    &-textos  {
+        max-width: 40%;
     }
-
+    
     &-imagen {
-        background: tomato;
+        min-width: 40%;
+        min-height: 20em;
+        background: lightcoral;
+    }
+
+    &-boton {
+        margin-top: 1em;
+        padding: 0 1em;
+        line-height: 2;
+        background: black;
+        color: wheat;
     }
 }
