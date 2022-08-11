@@ -1,0 +1,18 @@
+.sponsor {
+    padding: 1em;
+    background: darkorchid;
+
+    &-container {
+        @include flex (center , center , auto);
+        gap: 1em;
+
+        padding: 1em;
+        background: darkgoldenrod;
+    }
+
+    &-box {
+        min-width: 20%;
+        min-height: 5em;
+        background: blue;
+    }
+}

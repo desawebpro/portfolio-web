@@ -1,0 +1,21 @@
+.services {
+    padding: 1em;
+    background: red;
+
+    &-container {
+        @include flex (center , center , auto);
+
+        padding: 1em;
+        background: blue;
+    }
+
+    &-imagen , &-textos {
+        min-width: 50%;
+        min-height: 10em;
+        background: red;
+    }
+
+    &-textos {
+        background: yellow;
+    }
+}

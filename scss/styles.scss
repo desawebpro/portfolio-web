@@ -1,0 +1,42 @@
+// imports
+@import 'reset'
+// mixins
+, 'mixins';
+
+body {
+    background: gray;
+}
+
+.wrapper {
+    @include wrapper (1000% , 1200px , auto , 0);
+}
+
+// header
+@import 'header';
+
+// hero
+@import 'hero';
+
+// sponsor
+@import 'sponsor';
+
+// about
+@import 'about';
+
+// services
+@import 'services';
+
+// benefits
+@import 'benefits';
+
+// myblog
+@import 'myblog';
+
+// testimonial
+@import 'testimonial';
+
+// gallery´
+@import 'gallery';
+
+// footer
+@import 'footer';

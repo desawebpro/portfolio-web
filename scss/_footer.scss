@@ -1,0 +1,27 @@
+.footer {
+    padding: 1em;
+    background: tomato;
+
+    &-wrapper {
+        @include wrapper (100% , 1200px , auto , 0)
+    }
+
+    &-container {
+        padding: 1em;
+        background: steelblue;
+    }
+
+    &-iconbox {
+        max-width: 20%;
+        min-height: 5em;
+        margin: auto;
+        background: yellow;
+    }
+
+    &-terms{
+        max-width: 50%;
+        min-height: 3em;
+        margin: 1em auto 0;
+        background: peru;
+    }
+}

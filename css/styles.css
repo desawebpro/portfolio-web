@@ -1,0 +1,429 @@
+@charset "UTF-8";
+/* Reseteamos los margin y paddings de todas las etiquetas */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* Evitamos problemas con las imagenes */
+img, picture, video, iframe, figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* opcional */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* opcional */
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* Configuramos anclas suaves */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Evitamos problemas con los pseudoelementos de quotes */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+::after, ::before {
+  content: "";
+}
+
+/* Configuramos el texto que seleccionamos */
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form, input, textarea, select, button, label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  /* opcional */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+/* Reseteamos las tablas */
+table, tr, td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/* (Probándolo, no usar en producción) En el caso de añadir una  */
+/* p svg{
+display: inline;
+width: initial;
+} */
+/* Configuramos la tipografía para toda la web */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  color: var(--negro);
+  /* opcional */
+  line-height: 1.4em;
+  /* opcional */
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  /* opcional */
+  font-smooth: always;
+  /* opcional */
+  -webkit-font-smoothing: antialiased;
+  /* opcional */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: gray;
+}
+
+.wrapper {
+  width: 1000%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0;
+}
+
+.header {
+  padding: 1em;
+  background: darksalmon;
+}
+.header-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0;
+}
+.header-nav {
+  padding: 1em;
+}
+.header-logo {
+  max-width: 10em;
+  min-height: 3em;
+  margin: auto;
+  background: yellow;
+}
+.header-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: auto;
+      align-content: auto;
+  gap: 1em;
+  min-height: 3em;
+  margin-top: 1em;
+}
+.header-item {
+  min-width: calc(25% - 1em);
+  min-height: 2em;
+  background: pink;
+}
+
+.hero {
+  padding: 1em;
+  background: darkkhaki;
+}
+.hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: auto;
+      -ms-flex-align: auto;
+          align-items: auto;
+  -ms-flex-line-pack: auto;
+      align-content: auto;
+  padding: 1em;
+  background: darkgoldenrod;
+}
+.hero-textos {
+  min-width: 50%;
+  min-height: 20em;
+  background: red;
+}
+.hero-imagen {
+  min-width: 50%;
+  min-height: 20em;
+  background: blue;
+}
+
+.sponsor {
+  padding: 1em;
+  background: darkorchid;
+}
+.sponsor-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: auto;
+      align-content: auto;
+  gap: 1em;
+  padding: 1em;
+  background: darkgoldenrod;
+}
+.sponsor-box {
+  min-width: 20%;
+  min-height: 5em;
+  background: blue;
+}
+
+.about {
+  padding: 1em;
+  background: #cc0000;
+}
+.about-container {
+  padding: 1em;
+  background: #cccc00;
+}
+.about-textos {
+  max-width: 70%;
+  margin: auto;
+  padding: 5em;
+  background: green;
+}
+
+.services {
+  padding: 1em;
+  background: red;
+}
+.services-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: auto;
+      align-content: auto;
+  padding: 1em;
+  background: blue;
+}
+.services-imagen, .services-textos {
+  min-width: 50%;
+  min-height: 10em;
+  background: red;
+}
+.services-textos {
+  background: yellow;
+}
+
+.benefits {
+  padding: 1em;
+  background: blue;
+}
+.benefits-container {
+  padding: 1em;
+  background: red;
+}
+.benefits-tittle {
+  padding: 1em;
+  background: pink;
+}
+.benefits-content-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: auto;
+      align-content: auto;
+  gap: 1em;
+  margin-top: 1em;
+  padding: 1em;
+  background: yellow;
+}
+.benefits-box {
+  min-width: calc(25% - 1em);
+  min-height: 15em;
+  background: tomato;
+}
+
+.myblog {
+  padding: 1em;
+  background: steelblue;
+}
+.myblog-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: auto;
+      align-content: auto;
+  padding: 1em;
+  background: red;
+}
+.myblog-textos, .myblog-imagen {
+  min-width: 50%;
+  min-height: 10em;
+  background: pink;
+}
+.myblog-imagen {
+  background: tomato;
+}
+
+.testiomonial {
+  padding: 1em;
+  background: cadetblue;
+}
+.testiomonial-container {
+  padding: 1em;
+  background: red;
+}
+.testiomonial-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: auto;
+      align-content: auto;
+  max-width: 70%;
+  min-height: 5em;
+  margin: auto;
+  padding: 1em;
+  background: tomato;
+}
+.testiomonial-imagen {
+  min-width: 50%;
+  min-height: 10em;
+  background: yellow;
+}
+.testiomonial-textos {
+  min-width: 50%;
+  min-height: 10em;
+  background: green;
+}
+
+.gallery {
+  padding: 1em;
+  background: salmon;
+}
+.gallery-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: auto;
+      align-content: auto;
+  gap: 1em;
+  padding: 1em;
+  background: purple;
+}
+.gallery-box {
+  min-width: calc(25% - 1em);
+  min-height: 10em;
+  background: red;
+}
+
+.footer {
+  padding: 1em;
+  background: tomato;
+}
+.footer-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0;
+}
+.footer-container {
+  padding: 1em;
+  background: steelblue;
+}
+.footer-iconbox {
+  max-width: 20%;
+  min-height: 5em;
+  margin: auto;
+  background: yellow;
+}
+.footer-terms {
+  max-width: 50%;
+  min-height: 3em;
+  margin: 1em auto 0;
+  background: peru;
+}
+/*# sourceMappingURL=styles.css.map */

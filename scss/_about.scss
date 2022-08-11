@@ -1,0 +1,16 @@
+.about {
+    padding: 1em;
+    background: darken(red , 10%);
+
+    &-container {
+        padding: 1em;
+        background: darken(yellow, 10%);
+    }
+
+    &-textos {
+        max-width: 70%;
+        margin: auto;
+        padding: 5em;
+        background: green;
+    }
+}

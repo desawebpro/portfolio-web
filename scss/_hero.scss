@@ -1,0 +1,23 @@
+.hero {
+    padding: 1em;
+    background: darkkhaki;
+
+    &-container {
+        @include flex (center , auto , auto);
+
+        padding: 1em;
+        background: darkgoldenrod;
+    }
+
+    &-textos {
+        min-width: 50%;
+        min-height: 20em;
+        background: red;
+    }
+
+    &-imagen {
+        min-width: 50%;
+        min-height: 20em;
+        background: blue;
+    }
+}

@@ -1,0 +1,21 @@
+.myblog {
+    padding: 1em;
+    background: steelblue;
+
+    &-container {
+        @include flex (center , center , auto);
+        
+        padding: 1em;
+        background: red;
+    }
+
+    &-textos , &-imagen {
+        min-width: 50%;
+        min-height: 10em;
+        background: pink;
+    }
+
+    &-imagen {
+        background: tomato;
+    }
+}

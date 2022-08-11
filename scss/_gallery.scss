@@ -1,0 +1,18 @@
+.gallery {
+    padding: 1em;
+    background: salmon;
+
+    &-container {
+        @include flex (center , center , auto);
+        gap: 1em;
+
+        padding: 1em;
+        background: purple;
+    }
+
+    &-box{
+        min-width: calc(25% - 1em);
+        min-height: 10em;
+        background: red;
+    }
+}

@@ -1,0 +1,16 @@
+
+// wrapper
+@mixin wrapper ($width , $mxwidth , $margin , $padding) {
+    width: $width;
+    max-width: $mxwidth;
+    margin: $margin;
+    padding: $padding;
+}
+
+// flex
+@mixin flex ($jcontent , $algitems , $algcontent) {
+    display: flex;
+    justify-content: $jcontent;
+    align-items: $algitems;
+    align-content: $algcontent;
+}
